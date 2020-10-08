@@ -1,0 +1,22 @@
+.root {
+  -fx-background-color: #424242;
+  -c-primary: rgba(236, 64, 122, 0.7);
+}
+
+.barMenu {
+  -fx-background-color: #6d6d6d;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.3, 0, 0);
+}
+
+.closeButton {
+  -fx-background-color: transparent;
+  -fx-background-image: url(../img/close-icon.png);
+  -fx-background-size: 30px;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+}
+
+.dashButton {
+  -fx-background-color: -c-primary;
+  -fx-text-fill: #ffff;
+}

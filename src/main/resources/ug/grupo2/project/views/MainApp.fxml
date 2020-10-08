@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+
+<StackPane fx:id="MainApp" onMouseDragged="#handleWindowDragged" onMousePressed="#handleWindowPressed" prefHeight="500.0" prefWidth="800.0" styleClass="root" stylesheets="@../styles/MainAppStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ug.grupo2.project.MainAppController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="appBar" prefHeight="50.0" prefWidth="800.0" styleClass="barMenu">
+               <children>
+                  <Circle fx:id="profilePic" fill="#a7c0cd" layoutX="37.0" layoutY="30.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Label fx:id="userNameLabel" layoutX="70.0" layoutY="22.0" text="EMPLOYED NAME" textFill="WHITE" />
+                  <JFXButton fx:id="closeButton" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="756.0" layoutY="15.0" onAction="#handleCloseButtonAction" prefHeight="30.0" prefWidth="30.0" ripplerFill="WHITE" styleClass="closeButton" textFill="WHITE" />
+                  <JFXToggleButton fx:id="ToggleDarkMode" layoutX="534.0" minHeight="30.0" text="Dark Mode" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <GridPane fx:id="buttonsGrid" layoutX="31.0" layoutY="50.0" prefHeight="450.0" prefWidth="750.0" styleClass="buttonsGrid">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <JFXButton fx:id="requestButton" onAction="#handleRequestVacation" prefHeight="70.0" prefWidth="200.0" styleClass="dashButton" text="Requests" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

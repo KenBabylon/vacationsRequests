@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton ?>
+<?import com.jfoenix.controls.JFXTreeTableView ?>
+<?import javafx.scene.control.TreeTableView ?>
+<?import javafx.scene.layout.AnchorPane ?>
+<?import javafx.scene.layout.StackPane ?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#handleWindowDragged" onMousePressed="#handleWindowPressed" prefHeight="500.0" prefWidth="800.0" styleClass="root" stylesheets="@RequestsStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ug.grupo2.project.RequestsController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="800.0">
+         <children>
+            <JFXTreeTableView fx:id="dataTable" layoutY="99.0" prefHeight="300.0" prefWidth="800.0">
+               <columnResizePolicy>
+                  <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </JFXTreeTableView>
+            <AnchorPane fx:id="appBar" prefHeight="50.0" prefWidth="800.0" styleClass="appBar">
+               <children>
+                  <JFXButton fx:id="closeButton" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" graphicTextGap="0.0" layoutX="756.0" layoutY="10.0" onAction="#handleCloseButtonAction" prefHeight="30.0" prefWidth="30.0" ripplerFill="WHITE" styleClass="closeButton" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="saveChangeButton" focusTraversable="false" layoutX="625.0" layoutY="425.0" onAction="#handleSaveChangeButton" prefHeight="50.0" prefWidth="150.0" styleClass="dashButton" text="Save Changes" />
+            <JFXButton fx:id="discardChangeButton" focusTraversable="false" layoutX="450.0" layoutY="425.0" onAction="#handleDiscardChangeButton" prefHeight="50.0" prefWidth="150.0" styleClass="dashButton" text="Discard Changes" />
+            <JFXButton fx:id="addButton" layoutX="683.0" layoutY="61.0" onAction="#handleAddButtonAction" ripplerFill="WHITE" text="Add Request" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

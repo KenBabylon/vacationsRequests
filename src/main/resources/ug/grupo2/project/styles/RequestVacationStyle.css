@@ -1,0 +1,52 @@
+.root {
+  -fx-pallete-background: #303030;
+  -fx-primary: rgba(236, 64, 122, 0.7);
+  -fx-secondary: #df487f;
+  -fx-secondary-light: #e26d98;
+  -fx-primarytext: #fff;
+  -fx-secondarytext: #fff;
+  -fx-text-fill: -fx-primarytext;
+  -fx-border-width: 1px;
+  -fx-border-color: #1b1b1b;
+  -fx-border-style: solid;
+  -fx-background-color: -fx-pallete-background;
+}
+
+.closeButton {
+  -fx-background-color: -fx-secondary-light;
+  -fx-background-image: url(../img/close-icon.png);
+  -fx-background-size: 30px;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+}
+
+.title {
+  -fx-text-fill: -fx-primarytext;
+}
+
+.reasonTextField {
+  -fx-text-fill: #ffff;
+  -fx-prompt-text-fill: #ffff;
+  -jfx-focus-color: -fx-secondary;
+  -jfx-unfocus-color: -fx-primarytext;
+}
+
+.datePicker {
+  -fx-background-color: transparent;
+  -fx-text-fill: -fx-primarytext;
+  -fx-prompt-text-fill: -fx-primarytext;
+}
+
+.datePicker > .text-field {
+  -fx-background-color: transparent;
+  -fx-text-fill: -fx-primarytext;
+  -fx-prompt-text-fill: -fx-primarytext;
+}
+.datePicker:error > .text-field {
+  -fx-border-color: red;
+}
+
+.sendButton {
+  -fx-background-color: -fx-secondary;
+  -fx-text-fill: #ffff;
+}

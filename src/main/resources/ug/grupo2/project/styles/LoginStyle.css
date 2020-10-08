@@ -1,0 +1,31 @@
+.root {
+  -fx-background-color: null;
+}
+
+.loginBody {
+  -fx-background-color: #424242;
+  -fx-background-radius: 8px 0px 0px 8px;
+}
+
+.signInPanel {
+  -fx-background-color: #d81b60;
+  -fx-background-radius: 8px;
+}
+
+.LoginTextField {
+  -fx-prompt-text-fill: #ffff;
+  -fx-text-fill: #ffff;
+}
+
+.LoginButton {
+  -fx-background-color: #df487f;
+  -fx-text-fill: #ffff;
+}
+
+.closeButton {
+  -fx-background-color: transparent;
+  -fx-background-image: url(../img/close-icon.png);
+  -fx-background-size: 30px 30px;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+}

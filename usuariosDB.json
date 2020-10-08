@@ -1,0 +1,23 @@
+[
+  {
+    "User": "kenth",
+    "Password": "5114673k",
+    "Name": "Kenth Encalada",
+    "AccessLevel": "Admin",
+    "ProfilePicture": "pic1.jpg"
+  },
+  {
+    "User": "aa",
+    "Password": "aa",
+    "Name": "User 1",
+    "AccessLevel": "User",
+    "ProfilePicture": "pic1.jpg"
+  },
+  {
+    "User": "user1",
+    "Password": "123",
+    "Name": "User 2",
+    "AccessLevel": "User",
+    "ProfilePicture": "pic1.jpg"
+  }
+]
